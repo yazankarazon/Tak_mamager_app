@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/txt_Task"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="355dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/add_your_task"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Statistics"
+        android:layout_width="213dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="6dp"
+        android:onClick="btn_Statistics"
+        android:text="@string/statistics"
+        app:layout_constraintBottom_toTopOf="@+id/listView_Task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Add" />
+
+    <ListView
+        android:id="@+id/listView_Task"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Statistics" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Add"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="353dp"
+        android:layout_height="81dp"
+        android:layout_weight="1"
+        android:backgroundTint="#4CAF50"
+        android:onClick="addNewTask"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Statistics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Task" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

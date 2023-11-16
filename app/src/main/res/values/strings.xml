@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Task_manager_app</string>
+    <string name="enter_new_task">Enter New Task</string>
+    <string name="add">Add</string>
+    <string name="status">Status</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="title">Title</string>
+    <string name="details_of_task">Details Of Task</string>
+    <string name="add_your_task">Add Your Task</string>
+    <string name="add_and_show_tasks">Add And Show Tasks</string>
+    <string name="show_done_tasks">Show Done Tasks</string>
+    <string name="show_due_tasks">Show Due Tasks</string>
+    <string name="statistics">Statistics</string>
+    <string name="task_manager">Task Manager</string>
+    <string name="home_page">Home Page</string>
+    <string name="back">Back</string>
+
+    <string-array name="status">
+        <item>due</item>
+        <item>done</item>
+    </string-array>
+</resources>
